@@ -18,6 +18,7 @@
         <okHttpVersion>4.11.0</okHttpVersion>
         <jsonVersion>20230618</jsonVersion>
         <extentReportsVersion>1.0.7</extentReportsVersion>
+        <gsonVersion>2.10.1</gsonVersion>
     </properties>
 
     <dependencies>
@@ -49,6 +50,11 @@
             <artifactId>json</artifactId>
             <version>${jsonVersion}</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gsonVersion}</version>
+        </dependency>
 
         <!-- REPORTS -->
         <dependency>
@@ -67,7 +73,7 @@
                 <version>3.1.0</version>
                 <configuration>
                     <suiteXmlFiles>
-<!--                        <suiteXmlFile>suits/Lesson25/TestsRestLesson25.xml</suiteXmlFile>-->
+                        <suiteXmlFile>suits/TestsFreelance.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

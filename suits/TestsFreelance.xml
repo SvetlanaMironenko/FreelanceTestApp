@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestsFreelance" verbose="1">
+    <test name="TestsFreelance">
+        <classes>
+            <class name="webTests.UITests">
+                <methods>
+                    <include name="loginTest"/>
+                    <include name="registerAccountTest"/>
+                    <include name="userCanEditProfileTest"/>
+                    <include name="userCreateJobAtProfileTest"/>
+                    <include name="userAddMessageToJobTest"/>
+                    <include name="loginAndDeletedMessage"/>
+                </methods>
+            </class>
+            <class name="apiTests.ApiTests">
+                <methods>
+                    <include name="createUserApiTest"/>
+                    <include name="loginUserApiTest"/>
+                    <include name="userControllerApiTest"/>
+                    <include name="jobControllerApiTest"/>
+                    <include name="commentControllerApiTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
